@@ -7,3 +7,7 @@ Content-Type: application/json
   "password": "Abc@123",
   "name": "Daniel Hessel"
 }
+
+###
+
+GET http://localhost:3000/users/daniel@gmail.com
