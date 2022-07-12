@@ -1,0 +1,9 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+# x-token: p3kd58bb5xl
+
+{
+  "email": "daniel@gmail.com",
+  "password": "Abc@123",
+  "name": "Daniel Hessel"
+}
