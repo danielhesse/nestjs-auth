@@ -1,6 +1,5 @@
 POST http://localhost:3000/users
 Content-Type: application/json
-# x-token: p3kd58bb5xl
 
 {
   "email": "daniel@gmail.com",
@@ -11,3 +10,23 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/users/daniel@gmail.com
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "daniel@gmail.com",
+  "password": "Abc@123"
+}
+
+###
+
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkOTMyNWIxNy1jZTM4LTRiOTAtYjJhNS1iZjJjNGM3ZjM1ZTYiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJuYW1lIjoiRGFuaWVsIEhlc3NlbCIsImlhdCI6MTY1NzY1ODcxOSwiZXhwIjoxNjYwMjUwNzE5fQ.fykGtgLS2w20HYWHQw1v1N2HWasoB_EMMDkBiIrM-Es
+
+###
+
+GET http://localhost:3000/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkOTMyNWIxNy1jZTM4LTRiOTAtYjJhNS1iZjJjNGM3ZjM1ZTYiLCJlbWFpbCI6ImRhbmllbEBnbWFpbC5jb20iLCJuYW1lIjoiRGFuaWVsIEhlc3NlbCIsImlhdCI6MTY1NzY1ODcxOSwiZXhwIjoxNjYwMjUwNzE5fQ.fykGtgLS2w20HYWHQw1v1N2HWasoB_EMMDkBiIrM-Es
