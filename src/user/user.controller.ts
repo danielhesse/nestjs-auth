@@ -9,6 +9,12 @@ import { UserService } from './user.service';
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
+  /**
+   *  Create User
+   * @name CreateUser
+   * @param createUserDto
+   * @returns
+   */
   @Post()
   create(@Body() createUserDto: CreateUserDto) {
     return this.userService.create(createUserDto);
